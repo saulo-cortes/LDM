@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import MeuBotao from "./componentes/MeuBotao";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>Open up App.tsx to start working on your app!</Text>
+      <MeuBotao titulo="Pressione-me" onPress={()=> {Alert.alert("Botão pressionado!")}} />
       <StatusBar style="auto" />
     </View>
   );
